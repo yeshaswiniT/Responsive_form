@@ -1,0 +1,193 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-fmaily: Arial, sans-serif;
+}
+
+      body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: linear-gradient(135deg, #063453, #9b59b6);
+}
+
+    .registration-form{
+        max-width: 800px;
+        width: 100%;
+        background: #fff;
+        padding: 25px 30px 0;
+        border-radius: 10px;
+
+    }
+
+       .registration-form .tittle{
+        font-size: 30px;
+        font-weight:500;
+        position: absolute;
+       }
+
+       .registration-form .tittle::after{
+        content: '';
+       position:relative;
+        left:0;
+        bottom: 0;
+        height: 1px;
+        width: 30px;
+        background: linear-gradien  (#fbc2eb 0%, #a6c1ee 100%);
+
+       }
+
+       .registration-form  form .user-details{
+        display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         margin: 40px 0 14px 0;
+        
+       }
+       form .user-details .input-box {
+         margin-bottom: 10px;
+        width: calc(100% /3-20px);
+       }
+
+        .user-details .input-box  .details{
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+       }
+
+
+
+
+       .user-details .input-box  input{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 9px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+       }
+       .user-details .input-box input:focus,
+       .user-details .input-box input:valid{
+       border-color: #063453;
+       }
+     
+       .Gender {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        margin-top: 20px;
+    }
+        
+          
+    
+    .gender-group {
+        display: flex;           
+        justify-content: flex-start; 
+        gap: 8px;              
+    }
+
+    .gender-group label {
+        display: flex;          
+        align-items: center;    
+    }
+
+    
+    #upload-file {
+        display: none;
+    }
+
+
+    .upload-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        background-color: #6a1c89;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+    .upload-btn:hover {
+        background-color: #6a1c89;
+    }
+      
+    
+     form .button{
+        height: 40px;
+        margin: 35px 0;
+        display: block;
+        justify-items: left;
+
+     }
+
+    form  .button  input[type="submit"]{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        font-size: 20px;
+        background: linear-gradient(#fbc2eb 0%, #a6c1ee 100%);
+        cursor: pointer;
+         
+     }
+     .button input[type="submit"]:hover {
+        transform: scale(1.05);
+     }
+
+
+     @media (max-width: 768px) {
+        .user-details .input-box {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .title {
+            font-size: 20px;
+        }
+    
+       
+    
+        .upload-btn, .button input[type="submit"] {
+            font-size: 18px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .registration-form {
+            max-width: 800px;
+        }
+    }
+    
+    @media (orientation: landscape) {
+        .registration-form {
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        }
+          
+             
+      
+
+
+    @media (orientation: portrait) {
+        .registration-form {
+            display: flex;
+            flex-direction: column; /* Layout content in a column in portrait orientation */
+        }
+    }
+
+    
+    
